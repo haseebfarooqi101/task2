@@ -1,0 +1,79 @@
+/* Navbar container*/
+.navbar {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-between; /* logo on left, links center, logout right */
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .navbar .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navbar .navbar-logo img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .navbar .navbar-logo span {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  /* Links Section */
+  .navbar-links {
+    border: 1px solid #fff;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Right Section (Logout Button) */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout-btn {
+    background-color: #00bcd4;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #0097a7;
+  }
+  
+  /* Push content down (so navbar doesn't overlap it) */
+  body {
+    margin-top: 80px;
+  }
+    
