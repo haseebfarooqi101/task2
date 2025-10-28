@@ -1,0 +1,20 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout-content {
+  flex: 1;
+  padding: 100px 40px 40px; /* space for fixed navbar */
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}

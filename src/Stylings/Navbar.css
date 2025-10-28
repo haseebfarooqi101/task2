@@ -5,7 +5,7 @@
     justify-content: space-between; /* logo on left, links center, logout right */
     align-items: center;
     height: 70px;
-    padding: 0 30px;
+    padding: 0 5px;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@
   
   /* Links Section */
   .navbar-links {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     display: flex;
     gap: 25px;
     justify-content: center;
@@ -61,6 +61,7 @@
     background-color: #00bcd4;
     border: none;
     padding: 8px 15px;
+    margin-right: 10px;
     border-radius: 6px;
     color: white;
     cursor: pointer;
