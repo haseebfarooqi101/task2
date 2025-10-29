@@ -5,14 +5,14 @@ import Footer from "../Footer/index";
 
 export const Layout = ({children }) => {
   return (
-    <div style={{height:"100vh", width : "100vw"}}>
-      <div style={{ minHeight: "80vh" , minWidth: "100vw", backgroundColor: "#f0f2f5" }}>
-        </div>
+    <div style={{minHeight: "10vh" , minWidth: "10vw", backgroundColor: "#f0f2f5"}}>
+      
+       <Navbar />   
       <div >
         {children}  {/* 👈 all pages render here */}
       </div>
       
-      {/* <Footer /> */}
+       <Footer /> 
     </div>
     // <>
     

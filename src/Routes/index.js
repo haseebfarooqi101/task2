@@ -6,7 +6,16 @@ import { Route } from "react-router-dom";
 import {Layout} from  "../components/Layout";
 import {Home}  from "../pages/Home";
 import {PublicRoute} from "../Routes/PublicRoute";
+import {PrivateRoute} from "../Routes/PrivateRoute";
+//import { isUserLoggedIn } from "../Utils/Helper/index";
+import {Login} from "../pages/Login";
+import { Page1 } from "../pages/Page1";
+import { Page2 } from "../pages/Page2";
+import { About } from "../pages/About";
+import { About2 } from "../pages/About2";
+import { About3 } from "../pages/About3";
 const RoutingComp= () => {
+  //const isLoggedIn = isUserLoggedIn();
 return (
 <Router>  
 <Routes>
@@ -26,7 +35,17 @@ return (
           )
         }
       /> */}
-      <Route path="/" element={<PublicRoute comp={Home} layout={Layout} />} />
+      <Route path="/" element={<PublicRoute component={Home} layout={Layout} />} />
+        <Route path="/page1" element={<PublicRoute component={Page1} layout={Layout} />} />
+        <Route path="/page2" element={<PublicRoute component={Page2} layout={Layout} />} />
+        <Route path="/login" element={<PublicRoute component={Login} layout={Layout} />} />
+
+       {/* Private Routes */}
+        <Route path="/about" element={<PrivateRoute component={About} layout={Layout} />} />
+        <Route path="/about2" element={<PrivateRoute component={About2} layout={Layout} />} />
+        <Route path="/about3" element={<PrivateRoute component={About3} layout={Layout} />} />
+
+
         {/* Catch-all redirect */}
         <Route path="*" element={<Navigate to="/Home" replace />} />
       </Routes>

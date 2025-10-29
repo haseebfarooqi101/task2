@@ -3,14 +3,15 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import "../../Stylings/Navbar.css";
-import { useAuth } from "../../Auth/Auth/AuthContext"; // ✅ use Auth global instead of props
+import { isUserLoggedIn, logoutUser } from "../../Utils/Helper/index"; // ✅ your existing import
 
 const Navbar = () => {
-  const { isLoggedIn, handleLogout } = useAuth(); // 👈 automatically gets from Auth
   const navigate = useNavigate();
+  const isLoggedIn = isUserLoggedIn(); // ✅ get cookie-based login state
 
+  // ✅ define onLogout so ESLint sees it
   const onLogout = () => {
-    handleLogout();
+    logoutUser(); // removes auth cookie
     navigate("/login");
   };
 

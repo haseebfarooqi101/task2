@@ -1,18 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import { AuthProvider } from "./Auth/Auth/AuthContext";
+//import { BrowserRouter as Router } from "react-router-dom";
+
 import RoutingComp from "./Routes";   
 
 import "./Stylings/Style.css";
 
 const App = () => {
   return (
-    <AuthProvider>
+    //<AuthProvider>
       
         <RoutingComp />
         
       
-    </AuthProvider>
+    //</AuthProvider>
   );
 };
 

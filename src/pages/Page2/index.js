@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => (
+export const Page2 = () => (
   <div className="page-container">
     <h1>This is Page 2</h1>
     <p>Welcome to the React App with route protection and animations!</p>
@@ -9,4 +9,4 @@ const Home = () => (
 );
 console.log("Page2 loaded");
 
-export default Home;
+// default Page2;
